@@ -1,0 +1,28 @@
+/*34. Pizzas: Think of at least three kinds of your favorite pizza. Store these pizza names in a array, and then use 
+a for loop to print the name of each pizza.*/
+let pizza=['Arabic Raanch','Tikka Fajita','Pepperoni pizza'];
+for(let i=0; i<pizza.length; i++){
+    console.log(pizza[i]);
+    
+};
+/*• Modify your for loop to print a sentence using the name of the pizza instead of printing just the name of the pizza. 
+For each pizza you should have one line of output containing a simple statement like I like pepperoni pizza.*/
+// let pizza=['Arabic Raanch','Tikka Fajita','Pepperoni pizza'];
+// for(let i=0; i<pizza.length; i++){
+//     console.log(`I like ${pizza[i]}`);
+    
+// };
+
+
+/*• Add a line at the end of your program, outside the for loop, that states how much you like pizza. The output should 
+consist of three or more lines about the kinds of pizza you like and then an additional sentence, such as I really love pizza!*/
+const pizzaTypes = ["Pepperoni", "Arabic Ranch", "Tikka Fajita"];
+
+for (let i = 0; i < pizzaTypes.length; i++) {
+    const pizza = pizzaTypes[i];
+    console.log(`I enjoy the ${pizza} pizza for its unique flavors and delicious ingredients.`);
+    console.log("Each bite is a delightful adventure in taste and texture.");
+    console.log("The fusion of different culinary traditions makes pizza a truly global delight.");
+};
+
+console.log("I really love pizza! It's the ultimate comfort food that brings people together.");
