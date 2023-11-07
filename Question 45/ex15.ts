@@ -12,5 +12,5 @@ for (let i=0; i<guests.length; i++ ){
         console.log("Unfortunately, "+oldOne+" can't make it to dinner.");
         guests[i]= newOne;    
     }
-    console.log("Dear "+guest[i]+"!, You are pleasently invited to dinner.Please join us on sunday dinner.")
+    console.log("Dear "+guests[i]+"!, You are pleasently invited to dinner.Please join us on sunday dinner.")
 }

@@ -13,9 +13,12 @@ let new_users=['aaliyan564','ahmed890','saif345','ikram676','bilal563'];
 let currentUsersLower = current_users.map(user => user.toLowerCase());
  for(let newuser of new_users){
 
- if (currentUsersLower.includes(newuser.toLowerCase())){
-    console.log(`The username ${newuser} already taken.Please choose a new user_name.`);
-    
- } else {console.log(`The username ${newuser} is available.`);
- };
-};
+   newuser =newuser.toLowerCase()
+   let found =false;
+   for (const currentUser of currentUsersLower){
+       if (currentUser===newuser) found =true;
+   }
+   if (found)console.log(`The username ${newuser} already taken.Please choose a new user_name.`);
+   else console.log(`The username ${newuser} is available.`);
+
+ }
